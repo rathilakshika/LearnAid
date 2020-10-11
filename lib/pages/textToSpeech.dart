@@ -22,6 +22,19 @@ class _TextToSpeechState extends State<TextToSpeech> {
 
   bool _buttonsEnabled = true;
   TtsState ttsState = TtsState.stopped;
+
+  String dropdownValue = 'en-US';
+
+  // To show Selected Item in Text.
+  String holder = '';
+
+  List<String> accentName = ['en-US', 'en-IN', 'uk-UA', 'fr-FR', 'ru-RU'];
+  void getDropDownItem() {
+    setState(() {
+      holder = dropdownValue;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -50,6 +63,35 @@ class _TextToSpeechState extends State<TextToSpeech> {
               color: Colors.blueAccent,
               onPressed: _pickPDFText,
               padding: EdgeInsets.all(5),
+            ),
+            Container(
+              alignment: Alignment.center,
+              child: Text(
+                'Choose accent',
+                style: TextStyle(color: Colors.black, fontSize: 15),
+              ),
+            ),
+            DropdownButton<String>(
+              value: dropdownValue,
+              icon: Icon(Icons.arrow_drop_down),
+              iconSize: 24,
+              elevation: 16,
+              style: TextStyle(color: Colors.black, fontSize: 18),
+              underline: Container(
+                height: 2,
+                color: Colors.deepPurpleAccent,
+              ),
+              onChanged: (String data) {
+                setState(() {
+                  dropdownValue = data;
+                });
+              },
+              items: accentName.map<DropdownMenuItem<String>>((String value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
             ),
             FlatButton(
               child: Text(
@@ -112,6 +154,15 @@ class _TextToSpeechState extends State<TextToSpeech> {
     });
 
     String text = await _pdfDoc.text;
+    if (dropdownValue == 'en-US') {
+      await flutterTts.setLanguage("en-US");
+    }
+    if (dropdownValue == 'en-IN') {
+      await flutterTts.setLanguage("en-IN");
+    }
+    if (dropdownValue == 'fr-FR') {
+      await flutterTts.setLanguage("fr-FR");
+    }
     var result = await flutterTts.speak(text);
     if (result == 1) setState(() => ttsState = TtsState.playing);
     setState(() {

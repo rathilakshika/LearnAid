@@ -49,6 +49,7 @@ class HomeState extends State<Home> {
                   backgroundColor: Color(0xff87dcb2),
                   child: CircleAvatar(
                     radius: 60,
+                    backgroundColor: Colors.white,
                     backgroundImage: AssetImage('assets/images/unicorn.png'),
                   ),
                 ),
@@ -137,7 +138,7 @@ class NavDrawer extends StatelessWidget {
                     color: Color(0xff87dcb2),
                     image: DecorationImage(
                         fit: BoxFit.fill,
-                        image: AssetImage('assets/images/hands.png'))),
+                        image: AssetImage('assets/images/student.png'))),
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
