@@ -61,7 +61,7 @@ class _FriendlyFontState extends State<FriendlyFont> {
                 _pdfDoc == null
                     ? "Pick a new PDF document and wait for it to load..."
                     : "PDF document loaded, ${_pdfDoc.length} pages\n",
-                style: TextStyle(fontFamily: 'OpenDyslexic', fontSize: 18),
+                style: TextStyle(fontFamily: 'Open-Dyslexic', fontSize: 18),
                 textAlign: TextAlign.center,
               ),
               padding: EdgeInsets.all(15),
@@ -69,12 +69,15 @@ class _FriendlyFontState extends State<FriendlyFont> {
             Padding(
               child: Text(
                 _text == "" ? "" : "Text:",
-                style: TextStyle(fontFamily: 'OpenDyslexic', fontSize: 18),
+                style: TextStyle(fontFamily: 'Open-Dyslexic', fontSize: 18),
                 textAlign: TextAlign.center,
               ),
               padding: EdgeInsets.all(15),
             ),
-            Text(_text),
+            Text(
+              _text,
+              style: TextStyle(fontFamily: 'Open-Dyslexic', fontSize: 35),
+            ),
           ],
         ),
       ),

@@ -35,9 +35,9 @@ flutter:
 
  
   fonts:
-    - family: OpenDyslexic
+    - family: Open-Dyslexic
       fonts:
-        - asset: font/open-dyslexic.ttf
+        - asset: assets/font/open-dyslexic.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
