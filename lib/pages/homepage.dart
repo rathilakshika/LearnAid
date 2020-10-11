@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_aid/components/gridDashboard.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:learn_aid/pages/profile.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -143,17 +142,6 @@ class NavDrawer extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  ListTile(
-                    leading: Icon(Icons.input),
-                    title: Text('Welcome'),
-                    onTap: () => {},
-                  ),
-                  ListTile(
-                    leading: Icon(Icons.verified_user_rounded),
-                    title: Text('Profile'),
-                    onTap: () => Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Profile())),
-                  ),
                   ListTile(
                     leading: Icon(Icons.settings),
                     title: Text('Settings'),
