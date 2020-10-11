@@ -37,7 +37,7 @@ class HomeState extends State<Home> {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 25,
+            height: 12,
           ),
           Padding(
             padding: EdgeInsets.only(left: 16, right: 16),

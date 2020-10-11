@@ -19,6 +19,12 @@ dependencies:
   pdf_text: ^0.3.1
   file_picker: ^1.5.0+2
   url_launcher: ^5.7.2
+  speech_to_text: ^2.7.0
+  avatar_glow: ^1.2.0
+  pdf: ^1.5.0
+  path_provider: ^1.6.5
+  flutter_full_pdf_viewer: ^1.0.6
+
 
 dev_dependencies:
   flutter_test:

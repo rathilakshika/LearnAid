@@ -4,6 +4,7 @@ import 'package:learn_aid/pages/homepage.dart';
 import 'package:learn_aid/pages/textToSpeech.dart';
 import 'package:learn_aid/pages/friendly.dart';
 import 'package:learn_aid/pages/counsellor.dart';
+import 'package:learn_aid/pages/speechText.dart';
 
 class GridDashboard extends StatelessWidget {
   Items item1 = new Items(
@@ -15,12 +16,16 @@ class GridDashboard extends StatelessWidget {
       title: "Friendly Font",
       img: "assets/images/pdf.png",
       screen: FriendlyFont());
+
   Items item3 = new Items(
+      title: "Speech To Text",
+      img: "assets/images/mic.png",
+      screen: SpeechScreen());
+  Items item4 = new Items(
       title: "Counsellor",
       img: "assets/images/counsellor.png",
       screen: CallCounsellor());
-
-  Items item4 = new Items(
+  Items item5 = new Items(
       title: "Resources", img: "assets/images/book.png", screen: Home());
 
   @override
@@ -30,6 +35,7 @@ class GridDashboard extends StatelessWidget {
       item2,
       item3,
       item4,
+      item5,
     ];
     //var color = Colors.lightGreen;
     return Flexible(
@@ -37,8 +43,8 @@ class GridDashboard extends StatelessWidget {
           childAspectRatio: 1.0,
           padding: EdgeInsets.only(left: 14, right: 14),
           crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
           children: myList.map((data) {
             return GestureDetector(
               child: Container(
@@ -61,7 +67,7 @@ class GridDashboard extends StatelessWidget {
                       style: GoogleFonts.abel(
                           textStyle: TextStyle(
                               color: Colors.white,
-                              fontSize: 25,
+                              fontSize: 23,
                               fontWeight: FontWeight.w600)),
                     ),
                     SizedBox(
