@@ -64,7 +64,7 @@ class HomeState extends State<Home> {
                       style: GoogleFonts.openSans(
                           textStyle: TextStyle(
                               color: Color(0xFF20124d),
-                              fontSize: 18,
+                              fontSize: 23,
                               fontWeight: FontWeight.bold)),
                     ),
                     SizedBox(
@@ -77,7 +77,7 @@ class HomeState extends State<Home> {
                         style: GoogleFonts.openSans(
                             textStyle: TextStyle(
                                 color: Color(0xFF20124d),
-                                fontSize: 14,
+                                fontSize: 16,
                                 fontWeight: FontWeight.bold)),
                       ),
                     ),
@@ -93,7 +93,7 @@ class HomeState extends State<Home> {
                           style: GoogleFonts.openSans(
                               textStyle: TextStyle(
                                   color: Color(0xFF20124d),
-                                  fontSize: 15,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold)),
                         ),
                         color: Color(0xff87dcb2),
@@ -132,7 +132,7 @@ class NavDrawer extends StatelessWidget {
               DrawerHeader(
                 child: Text(
                   '',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(color: Colors.white, fontSize: 10),
                 ),
                 decoration: BoxDecoration(
                     color: Color(0xff87dcb2),
@@ -145,7 +145,10 @@ class NavDrawer extends StatelessWidget {
                 children: <Widget>[
                   ListTile(
                     leading: Icon(Icons.settings),
-                    title: Text('Settings'),
+                    title: Text(
+                      'Settings',
+                      style: TextStyle(fontSize: 20),
+                    ),
                     // onTap: () => Navigator.push(
                     //     context,
                     //     MaterialPageRoute(
@@ -153,12 +156,18 @@ class NavDrawer extends StatelessWidget {
                   ),
                   ListTile(
                     leading: Icon(Icons.border_color),
-                    title: Text('Feedback'),
+                    title: Text(
+                      'Feedback',
+                      style: TextStyle(fontSize: 20),
+                    ),
                     onTap: () => {Navigator.of(context).pop()},
                   ),
                   ListTile(
                     leading: Icon(Icons.info),
-                    title: Text('About'),
+                    title: Text(
+                      'About',
+                      style: TextStyle(fontSize: 20),
+                    ),
                     onTap: () => {Navigator.of(context).pop()},
                   ),
                 ],

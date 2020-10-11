@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:learn_aid/pages/homepage.dart';
 import 'package:learn_aid/pages/textToSpeech.dart';
 import 'package:learn_aid/pages/friendly.dart';
+import 'package:learn_aid/pages/counsellor.dart';
 
 class GridDashboard extends StatelessWidget {
   Items item1 = new Items(
@@ -15,7 +16,9 @@ class GridDashboard extends StatelessWidget {
       img: "assets/images/pdf.png",
       screen: FriendlyFont());
   Items item3 = new Items(
-      title: "Counsellor", img: "assets/images/counsellor.png", screen: Home());
+      title: "Counsellor",
+      img: "assets/images/counsellor.png",
+      screen: CallCounsellor());
 
   Items item4 = new Items(
       title: "Resources", img: "assets/images/book.png", screen: Home());
@@ -58,7 +61,7 @@ class GridDashboard extends StatelessWidget {
                       style: GoogleFonts.abel(
                           textStyle: TextStyle(
                               color: Colors.white,
-                              fontSize: 20,
+                              fontSize: 25,
                               fontWeight: FontWeight.w600)),
                     ),
                     SizedBox(

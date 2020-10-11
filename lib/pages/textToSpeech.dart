@@ -28,7 +28,7 @@ class _TextToSpeechState extends State<TextToSpeech> {
   // To show Selected Item in Text.
   String holder = '';
 
-  List<String> accentName = ['en-US', 'en-IN', 'uk-UA', 'fr-FR', 'ru-RU'];
+  List<String> accentName = ['en-US', 'en-IN', 'uk-UA'];
   void getDropDownItem() {
     setState(() {
       holder = dropdownValue;
