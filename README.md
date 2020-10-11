@@ -1,16 +1,11 @@
-# learn_aid
+# Learn_aid
+### - Breaking Barrier in the Classroom
 
-A new Flutter project.
+This App was built as a Hack under the Hackathon GirlHacks. It was inspired by the latest transition from in-person to virtual classrooms during the pandemic, which is even worse in the case of students with disabilities. 
 
-## Getting Started
+## Main Features 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+LearnAid seeks to address challenges facing students that are hearing impaired, dyslexic, or visually impaired. The following describes its features:
+- Live captioning for hearing impaired 
+- Conversion of pdf/learning material/assignment into dyslexia friendly font 
+- Audio recording or pdf to audio for visually impaired students and some way to help them with assignment like they can answer questions given in assignment/quiz by voice to text
