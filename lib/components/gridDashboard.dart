@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:learn_aid/pages/homepage.dart';
-import 'package:learn_aid/pages/textSpeech.dart';
+import 'package:learn_aid/pages/textToSpeech.dart';
+import 'package:learn_aid/pages/friendly.dart';
 
 class GridDashboard extends StatelessWidget {
   Items item1 = new Items(
       title: "PDF to Audio",
       img: "assets/images/audio.png",
-      screen: TextSpeech());
+      screen: TextToSpeech());
 
   Items item2 = new Items(
-      title: "Friendly Font", img: "assets/images/pdf.png", screen: Home());
+      title: "Friendly Font",
+      img: "assets/images/pdf.png",
+      screen: FriendlyFont());
   Items item3 = new Items(
       title: "Counsellor", img: "assets/images/counsellor.png", screen: Home());
 
