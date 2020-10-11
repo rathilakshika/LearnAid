@@ -5,6 +5,7 @@ import 'package:learn_aid/pages/textToSpeech.dart';
 import 'package:learn_aid/pages/friendly.dart';
 import 'package:learn_aid/pages/counsellor.dart';
 import 'package:learn_aid/pages/speechText.dart';
+import 'package:learn_aid/pages/resources.dart';
 
 class GridDashboard extends StatelessWidget {
   Items item1 = new Items(
@@ -26,7 +27,9 @@ class GridDashboard extends StatelessWidget {
       img: "assets/images/counsellor.png",
       screen: CallCounsellor());
   Items item5 = new Items(
-      title: "Resources", img: "assets/images/book.png", screen: Home());
+      title: "Resources", img: "assets/images/book.png", screen: Resources());
+  Items item6 =
+      new Items(title: "More", img: "assets/images/more.png", screen: Home());
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +39,7 @@ class GridDashboard extends StatelessWidget {
       item3,
       item4,
       item5,
+      item6,
     ];
     //var color = Colors.lightGreen;
     return Flexible(
